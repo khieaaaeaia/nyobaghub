@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campus Project Reporting</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Campus Project Reporting</h1>
+
+        <p id="status">Loading...</p>
+
+        <form id="reportForm">
+
+            <label>
+                Project Name
+                <input
+                    type="text"
+                    id="projectName"
+                    required
+                >
+            </label>
+
+            <label>
+                Description
+                <textarea
+                    id="description"
+                    rows="8"
+                    required
+                ></textarea>
+            </label>
+
+            <button type="submit">
+                Submit Report
+            </button>
+
+        </form>
+
+        <div id="result"></div>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
