@@ -1,6 +1,7 @@
 const form = document.getElementById("reportForm");
 const status = document.getElementById("status");
 const result = document.getElementById("result");
+const API_URL = "https://cobalapor.khirleynatasyahreyhandhika.workers.dev/api/report";
 
 
 status.textContent = "System ready";
@@ -35,7 +36,7 @@ form.addEventListener("submit", async (event) => {
     };
 
     try {
-        const response = await fetch("/api/report", {
+        const response = await fetch(API_URL, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
